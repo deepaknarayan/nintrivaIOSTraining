@@ -22,6 +22,11 @@
 		E26B8161193E0FE700F56D36 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26B8145193E0FE500F56D36 /* CoreData.framework */; };
 		E26B8169193E0FE800F56D36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E26B8167193E0FE800F56D36 /* InfoPlist.strings */; };
 		E26B816B193E0FE800F56D36 /* NinTraining000Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B816A193E0FE800F56D36 /* NinTraining000Tests.m */; };
+		E26B8175193E111800F56D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26B8174193E111800F56D36 /* Main.storyboard */; };
+		E26B8178193E126E00F56D36 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B8177193E126E00F56D36 /* LoginViewController.m */; };
+		E26B817D193E84FE00F56D36 /* NINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B817C193E84FE00F56D36 /* NINViewController.m */; };
+		E26B8180193E86C100F56D36 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B817F193E86C100F56D36 /* MainMenuViewController.m */; };
+		E26B8183193EE94100F56D36 /* NINMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B8182193EE94100F56D36 /* NINMenuButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		E26B8166193E0FE800F56D36 /* NinTraining000Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NinTraining000Tests-Info.plist"; sourceTree = "<group>"; };
 		E26B8168193E0FE800F56D36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E26B816A193E0FE800F56D36 /* NinTraining000Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NinTraining000Tests.m; sourceTree = "<group>"; };
+		E26B8174193E111800F56D36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E26B8176193E126E00F56D36 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E26B8177193E126E00F56D36 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E26B817B193E84FE00F56D36 /* NINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NINViewController.h; path = ../NINViewController.h; sourceTree = "<group>"; };
+		E26B817C193E84FE00F56D36 /* NINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NINViewController.m; path = ../NINViewController.m; sourceTree = "<group>"; };
+		E26B817E193E86C100F56D36 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		E26B817F193E86C100F56D36 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		E26B8181193EE94100F56D36 /* NINMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NINMenuButton.h; sourceTree = "<group>"; };
+		E26B8182193EE94100F56D36 /* NINMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NINMenuButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,14 @@
 				E26B8156193E0FE600F56D36 /* Images.xcassets */,
 				E26B8153193E0FE600F56D36 /* NinTraining000.xcdatamodeld */,
 				E26B8148193E0FE500F56D36 /* Supporting Files */,
+				E26B8174193E111800F56D36 /* Main.storyboard */,
+				E26B817B193E84FE00F56D36 /* NINViewController.h */,
+				E26B817C193E84FE00F56D36 /* NINViewController.m */,
+				E26B8176193E126E00F56D36 /* LoginViewController.h */,
+				E26B8177193E126E00F56D36 /* LoginViewController.m */,
+				E26B817E193E86C100F56D36 /* MainMenuViewController.h */,
+				E26B817F193E86C100F56D36 /* MainMenuViewController.m */,
+				E26B8184193EE94C00F56D36 /* Views */,
 			);
 			path = NinTraining000;
 			sourceTree = "<group>";
@@ -151,6 +173,15 @@
 				E26B8167193E0FE800F56D36 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E26B8184193EE94C00F56D36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E26B8181193EE94100F56D36 /* NINMenuButton.h */,
+				E26B8182193EE94100F56D36 /* NINMenuButton.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26B8175193E111800F56D36 /* Main.storyboard in Resources */,
 				E26B814C193E0FE500F56D36 /* InfoPlist.strings in Resources */,
 				E26B8157193E0FE600F56D36 /* Images.xcassets in Resources */,
 			);
@@ -249,9 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26B817D193E84FE00F56D36 /* NINViewController.m in Sources */,
 				E26B8152193E0FE500F56D36 /* EMAppDelegate.m in Sources */,
+				E26B8183193EE94100F56D36 /* NINMenuButton.m in Sources */,
 				E26B814E193E0FE500F56D36 /* main.m in Sources */,
 				E26B8155193E0FE600F56D36 /* NinTraining000.xcdatamodeld in Sources */,
+				E26B8180193E86C100F56D36 /* MainMenuViewController.m in Sources */,
+				E26B8178193E126E00F56D36 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
