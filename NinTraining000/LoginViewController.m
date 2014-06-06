@@ -56,12 +56,19 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(onKeyboardShow:) name:UIKeyboardWillShowNotification object:nil];
 
     
-
     
-}
+    
+    }
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                                            UITextAttributeTextColor: [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+                                                            UITextAttributeTextShadowColor: [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],
+                                                            UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 1.0f)],
+                                                            UITextAttributeFont: [UIFont fontWithName:@"Lobster1.4" size:0.0f]
+                                                            }];
+    
     
     UIScrollView* contentScrollView=[self.view.subviews objectAtIndex:0];
     
