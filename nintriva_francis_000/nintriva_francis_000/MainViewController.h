@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-@interface MainViewController : BaseViewController
-
+@interface MainViewController : BaseViewController <UITextFieldDelegate,UIGestureRecognizerDelegate>
 
 @end

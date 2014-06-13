@@ -33,11 +33,24 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpo-Zs-uxZ">
-                                        <rect key="frame" x="132" y="389" width="38" height="30"/>
+                                        <rect key="frame" x="201" y="388" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=">>">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="4kX-lj-aBg" kind="modal" identifier="loginSegue" id="mbf-O8-iQd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qt9-Ob-vuC">
+                                        <rect key="frame" x="78" y="388" width="38" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Login">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionLogin:" destination="gRc-I7-Bv4" eventType="touchUpInside" id="3gc-U2-pVK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -47,11 +60,40 @@
                     <navigationItem key="navigationItem" id="GpJ-jc-x55"/>
                     <connections>
                         <outlet property="contentScroll" destination="4wH-jD-aTW" id="51g-a3-GOR"/>
+                        <outlet property="password" destination="RQE-My-qEg" id="PnT-Ul-UT7"/>
+                        <outlet property="username" destination="l5W-iQ-91p" id="ZYO-0C-fAi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDB-t1-HLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-246" y="-325"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="c6n-1v-qQQ">
+            <objects>
+                <viewController id="4kX-lj-aBg" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bzx-S0-3zn"/>
+                        <viewControllerLayoutGuide type="bottom" id="GBp-Qw-knK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Sm-l0-Pq7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logined" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-X5-O2B">
+                                <rect key="frame" x="112" y="329" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ9-RZ-6vS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="-332"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TbC-qZ-wyA">

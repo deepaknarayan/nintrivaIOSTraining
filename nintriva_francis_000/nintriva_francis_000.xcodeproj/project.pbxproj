@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15552A31194B5B140066984B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15552A30194B5B140066984B /* Parse.framework */; };
+		15552A33194B5C0E0066984B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15552A32194B5C0E0066984B /* SystemConfiguration.framework */; };
+		15552A35194B5CA60066984B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15552A34194B5CA60066984B /* CFNetwork.framework */; };
+		15552A37194B5CB10066984B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15552A36194B5CB10066984B /* MobileCoreServices.framework */; };
+		15552A3A194B61880066984B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15552A39194B61880066984B /* HomeViewController.m */; };
 		15D0781119420BF800CA0EAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D0781019420BF800CA0EAF /* Foundation.framework */; };
 		15D0781319420BF800CA0EAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D0781219420BF800CA0EAF /* CoreGraphics.framework */; };
 		15D0781519420BF800CA0EAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D0781419420BF800CA0EAF /* UIKit.framework */; };
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15552A30194B5B140066984B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		15552A32194B5C0E0066984B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		15552A34194B5CA60066984B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		15552A36194B5CB10066984B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		15552A38194B61880066984B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		15552A39194B61880066984B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		15D0780D19420BF800CA0EAF /* nintriva_francis_000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nintriva_francis_000.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D0781019420BF800CA0EAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15D0781219420BF800CA0EAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15552A37194B5CB10066984B /* MobileCoreServices.framework in Frameworks */,
+				15552A35194B5CA60066984B /* CFNetwork.framework in Frameworks */,
+				15552A33194B5C0E0066984B /* SystemConfiguration.framework in Frameworks */,
 				15D0781319420BF800CA0EAF /* CoreGraphics.framework in Frameworks */,
 				15D0781519420BF800CA0EAF /* UIKit.framework in Frameworks */,
+				15552A31194B5B140066984B /* Parse.framework in Frameworks */,
 				15D0781119420BF800CA0EAF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +119,10 @@
 		15D0780F19420BF800CA0EAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15552A36194B5CB10066984B /* MobileCoreServices.framework */,
+				15552A34194B5CA60066984B /* CFNetwork.framework */,
+				15552A32194B5C0E0066984B /* SystemConfiguration.framework */,
+				15552A30194B5B140066984B /* Parse.framework */,
 				15D0781019420BF800CA0EAF /* Foundation.framework */,
 				15D0781219420BF800CA0EAF /* CoreGraphics.framework */,
 				15D0781419420BF800CA0EAF /* UIKit.framework */,
@@ -124,6 +143,8 @@
 				15D0784219420C8300CA0EAF /* MainViewController.m */,
 				15D0784419420C9F00CA0EAF /* BaseViewController.h */,
 				15D0784519420C9F00CA0EAF /* BaseViewController.m */,
+				15552A38194B61880066984B /* HomeViewController.h */,
+				15552A39194B61880066984B /* HomeViewController.m */,
 			);
 			path = nintriva_francis_000;
 			sourceTree = "<group>";
@@ -256,6 +277,7 @@
 				15D0782119420BF800CA0EAF /* AppDelegate.m in Sources */,
 				15D0784619420C9F00CA0EAF /* BaseViewController.m in Sources */,
 				15D0784319420C8300CA0EAF /* MainViewController.m in Sources */,
+				15552A3A194B61880066984B /* HomeViewController.m in Sources */,
 				15D0781D19420BF800CA0EAF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nintriva_francis_000/nintriva_francis_000-Prefix.pch";
 				INFOPLIST_FILE = "nintriva_francis_000/nintriva_francis_000-Info.plist";
@@ -386,6 +412,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nintriva_francis_000/nintriva_francis_000-Prefix.pch";
 				INFOPLIST_FILE = "nintriva_francis_000/nintriva_francis_000-Info.plist";
@@ -453,6 +483,7 @@
 				15D0783B19420BF800CA0EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15D0783C19420BF800CA0EAF /* Build configuration list for PBXNativeTarget "nintriva_francis_000Tests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +492,7 @@
 				15D0783E19420BF800CA0EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
